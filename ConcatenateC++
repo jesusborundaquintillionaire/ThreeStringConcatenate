@@ -1,0 +1,25 @@
+/*
+ * tresstrings.cpp
+ *
+ *  Created on: May 26, 2024
+ *      Author: jesus
+ */
+
+#include <iostream> //library for input and output
+#include <string> //String library to use string data types
+
+int main() { //The main function begins here
+    for (int i = 0; i < 3; i++) { //created a loop that run 3 times
+        std::string str1, str2; //declaring 2 strings variables
+
+	//prompt the user for first and second string
+        std::cout << "Please enter the first string: ";
+        std::getline(std::cin, str1);
+        std::cout << "Please enter the second string: ";
+        std::getline(std::cin, str2);
+
+        std::string result = str1 + str2;//concatenate the two strings
+        std::cout << "Concatenated string: " << result << std::endl;//Prints the Concatenated string
+    }
+    return 0;
+}
